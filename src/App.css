@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+* {
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  max-width: 55rem;
+  max-height: 60vh;
+  overflow: auto;
+  margin: 4rem auto;
+}
+
+input {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+}
+
+.container p {
+  background-color: #e8e8e8;
+  border-radius: 20px;
+
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container p span {
+  cursor: pointer;
+  font-size: 14px;
+  color: red;
 }
